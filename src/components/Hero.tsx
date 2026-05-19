@@ -18,12 +18,12 @@ export default function Hero() {
       {/* Central copy */}
       <div className="hero-content">
         <h1 className="hero-headline">
-          Your DevSecOps teammate<br />
-          for cloud security
+          Securing Cloud Infrastructure.<br />
+          DevSecOps.
         </h1>
         <p className="hero-sub">
-          Ayush Kishan collaborates in your workflow, builds secure cloud systems,
-          and empowers teams like a senior security engineer.
+          Ayush Kishan designs robust security guardrails, automates continuous compliance,
+          and builds resilient, threat-modeled cloud systems for modern engineering teams.
         </p>
         <div className="hero-ctas">
           <a href="#portfolio" className="btn btn-primary" style={{ padding: '12px 28px', fontSize: '0.76rem', cursor: 'none' }}>
@@ -40,7 +40,7 @@ export default function Hero() {
         <div className="diag-box" />
         <div className="diag-text">
           <div>CLIENT: Google Chrome</div>
-          <div>ROLE: Android · DevOps · Security</div>
+          <div>ROLE: DevSecOps · Cloud · Security</div>
           <div>DEPTH: 32BIT</div>
         </div>
       </div>

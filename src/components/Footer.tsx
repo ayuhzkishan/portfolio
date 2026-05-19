@@ -174,7 +174,7 @@ export default function Footer() {
               className="footer-about-text"
               style={{ ...mono, fontSize: '0.72rem', lineHeight: 1.85, marginBottom: 36, maxWidth: 460 }}
             >
-              Ayush Kishan is a security-first engineer specializing in DevSecOps pipelines, cloud infrastructure hardening, and Android development. Building resilient systems from Sambalpur, India.
+              Ayush Kishan is a security-first engineer specializing in DevSecOps pipelines, cloud infrastructure hardening, and automated threat modeling. Building resilient systems from Sambalpur, India.
             </p>
 
             {/* 4-col nav links */}

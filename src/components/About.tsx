@@ -41,7 +41,7 @@ export default function About() {
               I build things<br />that actually work.
             </h2>
             <p style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: '0.8rem', color: '#a39185', lineHeight: 1.9, marginBottom: 20 }}>
-              I'm a passionate technologist and undergrad at VSSUT, Burla — specialising in Android development, DevOps, and cybersecurity. My work is defined by one principle: ship secure, reliable software.
+              I'm a passionate technologist and undergrad at VSSUT, Burla — specialising in DevSecOps, cloud infrastructure, and cybersecurity. My work is defined by one principle: ship secure, reliable software.
             </p>
             <p style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: '0.8rem', color: '#a39185', lineHeight: 1.9, marginBottom: 44 }}>
               Beyond code, I lead teams, organise large-scale events, and translate complex technical concepts into clear communication for stakeholders and communities alike.

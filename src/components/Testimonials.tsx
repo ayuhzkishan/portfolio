@@ -6,7 +6,7 @@ import narayan  from '../assets/images/Narayan.jpeg';
 
 const TESTIMONIALS = [
   {
-    quote: "Ayush's expertise in Android development and DevOps has been instrumental in modernizing our tech stack. His ability to bridge technical and business requirements is exceptional.",
+    quote: "Ayush's expertise in Cloud Security and DevOps has been instrumental in modernizing our tech stack. His ability to bridge technical and business requirements is exceptional.",
     name:  'Anurag Mahapatra',
     role:  'AI/ML Lead · Enigma',
     img:   anurag,

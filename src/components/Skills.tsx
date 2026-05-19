@@ -4,8 +4,8 @@ import TopoBackground from './TopoBackground';
 const GROUPS = [
   {
     id: 'SKL-01',
-    label: 'Android Development',
-    items: ['Kotlin', 'Java', 'Jetpack Compose', 'MVVM Architecture', 'Firebase', 'Room DB', 'Retrofit', 'Material 3'],
+    label: 'Languages & Automation',
+    items: ['Python', 'Go', 'Bash', 'TypeScript', 'Node.js', 'Git', 'PowerShell', 'REST APIs'],
   },
   {
     id: 'SKL-02',
@@ -41,7 +41,7 @@ export default function Skills() {
               Skills &amp; tools<br />I use every day.
             </h2>
             <p className="section-sub" style={{ marginTop: 16 }}>
-              Full-stack — mobile to cloud to pentest.
+              From automated guardrails to cloud hardening to penetration testing.
             </p>
           </div>
 

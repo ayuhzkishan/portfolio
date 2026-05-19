@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const TICKER =
-  'Ayush Kishan · Android Developer · DevOps Practitioner · Cybersecurity Enthusiast · VSSUT Burla · Available for Internships · Built with precision · PoC || GTFO · ';
+  ' Ayush  · DevOps Practitioner · Security Engineer · Built with precision · Cybersecurity  ·  DevSecops';
 
 const NAV = [
   { label: 'About',      href: '#about'      },

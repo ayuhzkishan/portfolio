@@ -30,12 +30,12 @@ const EXPS = [
     id: 'EXP-003',
     period: 'Mar 2024 — Present',
     org: 'Enigma, VSSUT',
-    title: 'Android Developer & Cybersecurity Lead',
-    desc: "Technical lead for Android and security at Enigma — VSSUT's premier CS club. Focus on building innovative apps and secure coding standards.",
+    title: 'DevSecOps & Cybersecurity Lead',
+    desc: "Technical lead for DevSecOps and security at Enigma — VSSUT's premier CS club. Focus on building automated security guardrails and secure coding standards.",
     highlights: [
-      'Built college data-collection app streamlining job induction for recruiters & students',
-      'Led security audits and code reviews for all club projects',
-      'Mentored junior members on Android architecture and security practices',
+      'Built automated CI/CD security pipelines streamlining vulnerability assessment for club projects',
+      'Led security audits, penetration testing, and code reviews for all club applications',
+      'Mentored junior members on threat modeling, secure architectures, and DevOps practices',
     ],
   },
 ];

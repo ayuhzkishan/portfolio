@@ -4,11 +4,11 @@ import TopoBackground from './TopoBackground';
 const PROJECTS = [
   {
     id: 'PROJ-001',
-    category: 'Android · Security',
-    title: 'SecureChat Messenger',
-    desc: 'End-to-end encrypted messaging with Material You design. Zero-knowledge architecture, Kotlin + Jetpack Compose.',
-    tags: ['Kotlin', 'Jetpack Compose', 'E2E Encryption', 'Firebase'],
-    img: 'https://images.unsplash.com/photo-1611746872915-64382b5c76da?auto=format&fit=crop&w=800&q=80',
+    category: 'Security · Automation',
+    title: 'TriFusion Secret Detector',
+    desc: 'High-performance secrets detection framework with multi-layered regex engines and ML-based false positive suppression.',
+    tags: ['Python', 'Go', 'Regex Engine', 'CI/CD Integration'],
+    img: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=800&q=80',
     github: '#', live: '#',
   },
   {

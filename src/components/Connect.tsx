@@ -39,7 +39,7 @@ export default function Connect() {
         {/* The Outer Frame matching the screenshot */}
         <div style={{
           border: '1px solid rgba(253,251,247,0.15)',
-          background: '#060303',
+          background: 'transparent',
           position: 'relative',
           display: 'grid',
           gridTemplateColumns: '1fr 340px',
@@ -48,7 +48,7 @@ export default function Connect() {
           {/* Top border decorative ASCII */}
           <div style={{
             position: 'absolute', top: -14, left: 16,
-            background: '#060303', padding: '0 8px',
+            background: 'transparent', padding: '0 8px',
             ...mono, fontSize: '0.55rem', color: '#7a6a60', letterSpacing: '0.15em',
             whiteSpace: 'nowrap'
           }}>
@@ -56,7 +56,7 @@ export default function Connect() {
           </div>
           <div style={{
             position: 'absolute', top: -14, right: 16,
-            background: '#060303', padding: '0 8px',
+            background: 'transparent', padding: '0 8px',
             ...mono, fontSize: '0.55rem', color: '#7a6a60', letterSpacing: '0.15em'
           }}>
             TRUSTED BY
@@ -115,11 +115,11 @@ export default function Connect() {
           </div>
 
           {/* ── Right Side: Scrolling Socials ── */}
-          <div style={{ position: 'relative', overflow: 'hidden', height: '100%', background: '#060303' }}>
+          <div style={{ position: 'relative', overflow: 'hidden', height: '100%', background: 'transparent' }}>
 
             {/* Fade gradients top/bottom */}
-            <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 60, background: 'linear-gradient(to bottom, #060303, transparent)', zIndex: 2, pointerEvents: 'none' }} />
-            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 60, background: 'linear-gradient(to top, #060303, transparent)', zIndex: 2, pointerEvents: 'none' }} />
+            <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 60, background: 'linear-gradient(to bottom, #110d0d, transparent)', zIndex: 2, pointerEvents: 'none' }} />
+            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 60, background: 'linear-gradient(to top, #110d0d, transparent)', zIndex: 2, pointerEvents: 'none' }} />
 
             <div className="v-scroll-track" style={{ display: 'flex', flexDirection: 'column', position: 'absolute', top: 0, left: 0, right: 0 }}>
               {/* Double array for seamless loop */}

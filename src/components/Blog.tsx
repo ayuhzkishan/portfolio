@@ -75,7 +75,7 @@ function BlogCard({ p }: { p: typeof POSTS[0] }) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{ 
-        background: '#060303',
+        background: 'transparent',
         borderColor: isActive ? 'rgba(253,251,247,0.25)' : 'rgba(255,255,255,0.06)',
         transition: 'border-color 0.4s ease'
       }}

@@ -84,7 +84,7 @@ function ProjectCard({ p }: { p: typeof PROJECTS[0] }) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{ 
-        background: '#060303', 
+        background: 'transparent', 
         overflow: 'hidden',
         borderRadius: 2,
         border: '1px solid',

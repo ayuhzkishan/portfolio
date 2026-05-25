@@ -160,14 +160,14 @@ export default function Footer() {
   const diag = useDiagnostics();
 
   return (
-    <footer style={{ background: '#060303', borderTop: '1px solid rgba(253,251,247,0.07)' }}>
+    <footer style={{ background: 'transparent', borderTop: '1px solid rgba(253,251,247,0.07)' }}>
 
       {/* ── Main two-panel layout ── */}
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 28px' }}>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 1, background: 'rgba(253,251,247,0.06)' }} className="footer-main-grid">
 
           {/* ── LEFT panel ── */}
-          <div style={{ background: '#060303', padding: '40px 36px' }}>
+          <div style={{ background: 'transparent', padding: '40px 36px' }}>
             {/* About blurb */}
             <div style={{ ...techMono, fontSize: '0.55rem', color: '#4a3a35', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 16 }}>ABOUT</div>
             <p 
@@ -231,7 +231,7 @@ export default function Footer() {
           </div>
 
           {/* ── RIGHT panel: Diagnostics ── */}
-          <div style={{ background: '#060303', padding: '40px 36px' }}>
+          <div style={{ background: 'transparent', padding: '40px 36px' }}>
             <div style={{ ...techMono, fontSize: '0.55rem', color: '#4a3a35', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 20 }}>DIAGNOSTICS</div>
 
             <DiagRow label="Platform"       value={diag.platform}       label2="Language"      value2={navigator.language} />
@@ -264,7 +264,7 @@ export default function Footer() {
       {/* ── Bottom scrolling ticker ── */}
       <div style={{
         overflow: 'hidden',
-        background: '#060303',
+        background: 'transparent',
         borderTop: '1px solid rgba(253,251,247,0.06)',
         height: 36,
         display: 'flex',
@@ -281,7 +281,7 @@ export default function Footer() {
             <span key={i} style={{ ...techMono, fontSize: '0.65rem', color: '#3f3f46', padding: '0 32px', letterSpacing: '0.08em', display: 'flex', alignItems: 'center', gap: 24, flexShrink: 0 }}>
               <span style={{ display: 'inline-flex', alignItems: 'center', gap: 10 }}>
                 <span style={{ width: 16, height: 16, background: '#fdfbf7', clipPath: 'polygon(4px 0%,100% 0%,100% 100%,0% 100%,0% 4px)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <span style={{ ...techMono, fontSize: '0.4rem', fontWeight: 900, color: '#060303' }}>AK</span>
+                  <span style={{ ...techMono, fontSize: '0.4rem', fontWeight: 900, color: '#110d0d' }}>AK</span>
                 </span>
                 AYUSH KISHAN
               </span>

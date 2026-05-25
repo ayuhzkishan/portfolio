@@ -174,7 +174,7 @@ export default function Advisories() {
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
   }, []);
   return (
-    <div className="section-wrap" id="devsecops" style={{ background: '#060303', position: 'relative' }}>
+    <div className="section-wrap" id="devsecops" style={{ background: 'transparent', position: 'relative' }}>
       <TopoBackground variant="bottom-right" />
       <div className="section" style={{ position: 'relative', zIndex: 1 }}>
         <span className="section-label" style={{ color: '#7a6a60', marginBottom: 32 }}>DEVSECOPS PIPELINE</span>

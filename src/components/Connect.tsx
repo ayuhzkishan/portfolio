@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ASCII_BAT = `
-       _==/          i     i          \\==_
+       _==/          i     i            \==_
      /XX/            |\\___/|            \\XX\\
    /XXXX\\            |XXXXX|            /XXXX\\
   |XXXXXX\\_         _XXXXXXX_         _/XXXXXX|
@@ -11,9 +11,9 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX|
  XXXXXX/^^^^"\\XXXXXXXXXXXXXXXXXXXXX/^^^^^\\XXXXXX
   |XXX|       \\XXX/^^\\XXXXX/^^\\XXX/       |XXX|
-    \\X\\         \\X\\    \\X/    /X/         /X/
-       \\         \\X\\   /X\\   /X/         /
-                  \\X\\ /XXX\\ /X/
+    \\X\\      \\X\\    \\X/    //X//        //X//
+       \\        \\X\\   /X\\   /X/         //
+                 \\X\\ /XXX\\ /X/            
                    \\X\\XXXXX/X/
                     \\X\\XXX/X/
                      \\X\\X/X/
@@ -22,11 +22,11 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 `;
 
 const SOCIALS = [
-  { name: 'TryHackMe', id: '@ayuhzkishan',  icon: 'THM' },
-  { name: 'LinkedIn',  id: '/in/ayuhzkishan', icon: 'IN' },
+  { name: 'TryHackMe', id: '@ayuhzkishan', icon: 'THM' },
+  { name: 'LinkedIn', id: '/in/ayuhzkishan', icon: 'IN' },
   { name: 'X / Twitter', id: '@ayuhzkishan', icon: 'X' },
-  { name: 'LeetCode',  id: '/ayuhzkishan',  icon: 'LC' },
-  { name: 'GitHub',    id: '@ayuhzkishan',  icon: 'GH' },
+  { name: 'LeetCode', id: '/ayuhzkishan', icon: 'LC' },
+  { name: 'GitHub', id: '@ayuhzkishan', icon: 'GH' },
 ];
 
 const mono: React.CSSProperties = { fontFamily: 'JetBrains Mono, monospace' };
@@ -35,36 +35,36 @@ export default function Connect() {
   return (
     <div id="connect" className="section-wrap" style={{ position: 'relative', overflow: 'hidden' }}>
       <div className="section" style={{ padding: '60px 28px', maxWidth: 1280, margin: '0 auto' }}>
-        
+
         {/* The Outer Frame matching the screenshot */}
-        <div style={{ 
-          border: '1px solid rgba(253,251,247,0.15)', 
-          background: '#060303', 
+        <div style={{
+          border: '1px solid rgba(253,251,247,0.15)',
+          background: '#060303',
           position: 'relative',
           display: 'grid',
           gridTemplateColumns: '1fr 340px',
         }} className="connect-layout">
 
           {/* Top border decorative ASCII */}
-          <div style={{ 
-            position: 'absolute', top: -14, left: 16, 
+          <div style={{
+            position: 'absolute', top: -14, left: 16,
             background: '#060303', padding: '0 8px',
             ...mono, fontSize: '0.55rem', color: '#7a6a60', letterSpacing: '0.15em',
             whiteSpace: 'nowrap'
           }}>
             ABOUT /       ( #        ( (#          # . ) %  ,       / @  @#).( #          , / ) ,  @  #    @ % . /
           </div>
-          <div style={{ 
-            position: 'absolute', top: -14, right: 16, 
+          <div style={{
+            position: 'absolute', top: -14, right: 16,
             background: '#060303', padding: '0 8px',
-            ...mono, fontSize: '0.55rem', color: '#7a6a60', letterSpacing: '0.15em' 
+            ...mono, fontSize: '0.55rem', color: '#7a6a60', letterSpacing: '0.15em'
           }}>
             TRUSTED BY
           </div>
 
           {/* ── Left Side: Content & ASCII Bg ── */}
           <div style={{ position: 'relative', padding: '40px 32px', overflow: 'hidden', borderRight: '1px solid rgba(253,251,247,0.06)' }}>
-            
+
             {/* ASCII Batman Bg */}
             <pre style={{
               position: 'absolute',
@@ -85,12 +85,12 @@ export default function Connect() {
             </pre>
 
             <div style={{ position: 'relative', zIndex: 1, maxWidth: 640 }}>
-              <h2 style={{ 
-                fontFamily: 'Inter, sans-serif', 
-                fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', 
-                fontWeight: 500, 
-                color: '#fdfbf7', 
-                letterSpacing: '-0.02em', 
+              <h2 style={{
+                fontFamily: 'Inter, sans-serif',
+                fontSize: 'clamp(1.5rem, 3vw, 2.2rem)',
+                fontWeight: 500,
+                color: '#fdfbf7',
+                letterSpacing: '-0.02em',
                 marginBottom: 24,
                 lineHeight: 1.1
               }}>
@@ -103,11 +103,11 @@ export default function Connect() {
                 <p>You probably spend lots of time chasing them down.</p>
                 <p style={{ color: '#eaddc5', fontWeight: 600 }}>But in the end, how many of them were actually worth your time?</p>
                 <p>
-                  Hacktron finds exploitable vulnerabilities and helps your team<br/>fix what matters.
+                  Hacktron finds exploitable vulnerabilities and helps your team<br />fix what matters.
                 </p>
                 <p style={{ marginTop: 12 }}>
-                  Built by elite hackers who've spent careers exploiting the most<br/>
-                  complex and high-value targets, we operate by one principle:<br/>
+                  Built by elite hackers who've spent careers exploiting the most<br />
+                  complex and high-value targets, we operate by one principle:<br />
                   <span style={{ color: '#fdfbf7', fontWeight: 700 }}>PoC || GTFO.</span>
                 </p>
               </div>
@@ -116,7 +116,7 @@ export default function Connect() {
 
           {/* ── Right Side: Scrolling Socials ── */}
           <div style={{ position: 'relative', overflow: 'hidden', height: '100%', background: '#060303' }}>
-            
+
             {/* Fade gradients top/bottom */}
             <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 60, background: 'linear-gradient(to bottom, #060303, transparent)', zIndex: 2, pointerEvents: 'none' }} />
             <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 60, background: 'linear-gradient(to top, #060303, transparent)', zIndex: 2, pointerEvents: 'none' }} />
@@ -138,8 +138,8 @@ export default function Connect() {
                   </div>
 
                   {/* Logo Text Box */}
-                  <a 
-                    href="#" 
+                  <a
+                    href="#"
                     className="social-box"
                     style={{
                       display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -151,22 +151,22 @@ export default function Connect() {
                     onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'}
                     onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
                   >
-                    <div style={{ 
-                      fontFamily: 'Inter, sans-serif', 
-                      fontSize: '1.8rem', 
-                      fontWeight: 700, 
-                      color: '#a39185', 
+                    <div style={{
+                      fontFamily: 'Inter, sans-serif',
+                      fontSize: '1.8rem',
+                      fontWeight: 700,
+                      color: '#a39185',
                       letterSpacing: '-0.04em',
                       display: 'flex',
                       alignItems: 'center',
                       gap: 12
                     }}>
                       {/* Fake brand icons to mimic the image */}
-                      {s.icon === 'THM' && <span style={{fontSize:'1.4rem'}}>🛡️</span>}
-                      {s.icon === 'IN' && <span style={{fontSize:'1.4rem'}}>💼</span>}
-                      {s.icon === 'X' && <span style={{fontSize:'1.4rem'}}>𝕏</span>}
-                      {s.icon === 'LC' && <span style={{fontSize:'1.4rem'}}>⌨️</span>}
-                      {s.icon === 'GH' && <span style={{fontSize:'1.4rem'}}>🐙</span>}
+                      {s.icon === 'THM' && <span style={{ fontSize: '1.4rem' }}>🛡️</span>}
+                      {s.icon === 'IN' && <span style={{ fontSize: '1.4rem' }}>💼</span>}
+                      {s.icon === 'X' && <span style={{ fontSize: '1.4rem' }}>𝕏</span>}
+                      {s.icon === 'LC' && <span style={{ fontSize: '1.4rem' }}>⌨️</span>}
+                      {s.icon === 'GH' && <span style={{ fontSize: '1.4rem' }}>🐙</span>}
                       {s.name.toLowerCase()}
                     </div>
                   </a>

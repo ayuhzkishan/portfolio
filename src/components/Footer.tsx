@@ -286,7 +286,7 @@ export default function Footer() {
                 AYUSH KISHAN
               </span>
               <span style={{ color: '#27272a' }}>·</span>
-              <span>PoC || GTFO</span>
+              <span>Cyber Security</span>
               <span style={{ color: '#27272a' }}>·</span>
               <span>SEC ENGINEERING</span>
               <span style={{ color: '#27272a' }}>·</span>

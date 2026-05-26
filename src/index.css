@@ -531,11 +531,11 @@ h1, h2, h3, h4, h5 {
 }
 /* ─── Mobile Visibility Fixes ────────────────────── */
 .footer-link {
-  color: #3f3f46;
+  color: #8e8e93;
   transition: color 0.15s;
 }
 .footer-about-text {
-  color: #7a6a60;
+  color: #bcaea5;
 }
 
 @media (max-width: 900px) {

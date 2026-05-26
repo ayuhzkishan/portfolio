@@ -146,10 +146,10 @@ const TICKER_TEXT = 'AK · AYUSH KISHAN · PoC || GTFO · SEC ENGINEERING · CLO
 function DiagRow({ label, value, label2, value2 }: { label: string; value: string; label2?: string; value2?: string }) {
   return (
     <div className="diag-row" style={{ gap: '4px 8px', marginBottom: 5 }}>
-      <span style={{ ...techMono, fontSize: '0.55rem', color: '#4a3a35', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{label}</span>
-      <span style={{ ...mono, fontSize: '0.55rem', color: '#7a6a60', letterSpacing: '0.04em' }}>{value}</span>
-      {label2 && <span style={{ ...techMono, fontSize: '0.55rem', color: '#4a3a35', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{label2}</span>}
-      {value2 && <span style={{ ...mono, fontSize: '0.55rem', color: '#7a6a60', letterSpacing: '0.04em' }}>{value2}</span>}
+      <span style={{ ...techMono, fontSize: '0.55rem', color: '#8c7b75', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{label}</span>
+      <span style={{ ...mono, fontSize: '0.55rem', color: '#bcaea5', letterSpacing: '0.04em' }}>{value}</span>
+      {label2 && <span style={{ ...techMono, fontSize: '0.55rem', color: '#8c7b75', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{label2}</span>}
+      {value2 && <span style={{ ...mono, fontSize: '0.55rem', color: '#bcaea5', letterSpacing: '0.04em' }}>{value2}</span>}
     </div>
   );
 }
@@ -169,7 +169,7 @@ export default function Footer() {
           {/* ── LEFT panel ── */}
           <div style={{ background: 'transparent', padding: '40px 36px' }}>
             {/* About blurb */}
-            <div style={{ ...techMono, fontSize: '0.55rem', color: '#4a3a35', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 16 }}>ABOUT</div>
+            <div style={{ ...techMono, fontSize: '0.55rem', color: '#8c7b75', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 16 }}>ABOUT</div>
             <p 
               className="footer-about-text"
               style={{ ...mono, fontSize: '0.72rem', lineHeight: 1.85, marginBottom: 36, maxWidth: 460 }}
@@ -181,7 +181,7 @@ export default function Footer() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 24 }} className="footer-nav-grid">
               {NAV_COLS.map(col => (
                 <div key={col.heading}>
-                  <div style={{ ...techMono, fontSize: '0.5rem', color: '#4a3a35', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: 14 }}>{col.heading}</div>
+                  <div style={{ ...techMono, fontSize: '0.5rem', color: '#8c7b75', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: 14 }}>{col.heading}</div>
                   {col.links.map(link => (
                     <a
                       key={link.l}
@@ -207,32 +207,32 @@ export default function Footer() {
                 <div style={{ width: 36, height: 36, borderRadius: '50%', background: 'rgba(220,38,38,0.15)', border: '1px solid rgba(220,38,38,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                   <span style={{ ...mono, fontSize: '0.55rem', fontWeight: 700, color: '#dc2626' }}>AK</span>
                 </div>
-                <span style={{ ...mono, fontSize: '0.7rem', color: '#7a6a60', letterSpacing: '0.08em' }}>PORTFOLIO CENTER</span>
+                <span style={{ ...mono, fontSize: '0.7rem', color: '#bcaea5', letterSpacing: '0.08em' }}>PORTFOLIO CENTER</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                 <span style={{ display: 'inline-block', width: 6, height: 6, borderRadius: '50%', background: '#22c55e', boxShadow: '0 0 5px #22c55e' }} />
-                <span style={{ ...mono, fontSize: '0.58rem', color: '#7a6a60', letterSpacing: '0.08em' }}>ALL SYSTEMS OPERATIONAL</span>
+                <span style={{ ...mono, fontSize: '0.58rem', color: '#bcaea5', letterSpacing: '0.08em' }}>ALL SYSTEMS OPERATIONAL</span>
               </div>
             </div>
 
             {/* Legal row */}
             <div style={{ marginTop: 16, display: 'flex', gap: 20, flexWrap: 'wrap' }}>
               {['Privacy Policy', 'Terms of Service', 'Cookie Settings'].map(t => (
-                <a key={t} href="#" style={{ ...mono, fontSize: '0.58rem', color: '#27272a', cursor: 'none' }}
-                  onMouseEnter={e => (e.currentTarget.style.color = '#7a6a60')}
-                  onMouseLeave={e => (e.currentTarget.style.color = '#27272a')}>
+                <a key={t} href="#" style={{ ...mono, fontSize: '0.58rem', color: '#71717a', cursor: 'none' }}
+                  onMouseEnter={e => (e.currentTarget.style.color = '#bcaea5')}
+                  onMouseLeave={e => (e.currentTarget.style.color = '#71717a')}>
                   {t}
                 </a>
               ))}
             </div>
-            <div style={{ ...mono, fontSize: '0.55rem', color: '#27272a', marginTop: 10 }}>
+            <div style={{ ...mono, fontSize: '0.55rem', color: '#71717a', marginTop: 10 }}>
               Ayush Kishan © {new Date().getFullYear()}
             </div>
           </div>
 
           {/* ── RIGHT panel: Diagnostics ── */}
           <div style={{ background: 'transparent', padding: '40px 36px' }}>
-            <div style={{ ...techMono, fontSize: '0.55rem', color: '#4a3a35', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 20 }}>DIAGNOSTICS</div>
+            <div style={{ ...techMono, fontSize: '0.55rem', color: '#8c7b75', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: 20 }}>DIAGNOSTICS</div>
 
             <DiagRow label="Platform"       value={diag.platform}       label2="Language"      value2={navigator.language} />
             <DiagRow label="Network"        value={diag.network}        label2="Memory"        value2={diag.memory} />
@@ -247,12 +247,12 @@ export default function Footer() {
 
             <div style={{ marginTop: 8, display: 'flex', alignItems: 'center', gap: 6 }}>
               <span style={{ display: 'inline-block', width: 6, height: 6, borderRadius: '50%', background: '#22c55e', boxShadow: '0 0 5px #22c55e', flexShrink: 0 }} />
-              <span style={{ ...techMono, fontSize: '0.55rem', color: '#7a6a60' }}>ON TNF</span>
+              <span style={{ ...techMono, fontSize: '0.55rem', color: '#bcaea5' }}>ON TNF</span>
             </div>
 
             <div style={{ marginTop: 16, paddingTop: 12, borderTop: '1px solid rgba(253,251,247,0.04)' }}>
-              <div style={{ ...techMono, fontSize: '0.5rem', color: '#4a3a35', marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.1em' }}>User Agent</div>
-              <div style={{ ...techMono, fontSize: '0.52rem', color: '#5a4a45', lineHeight: 1.7, wordBreak: 'break-all' }}>
+              <div style={{ ...techMono, fontSize: '0.5rem', color: '#8c7b75', marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.1em' }}>User Agent</div>
+              <div style={{ ...techMono, fontSize: '0.52rem', color: '#9c8b85', lineHeight: 1.7, wordBreak: 'break-all' }}>
                 {navigator.userAgent}
               </div>
             </div>
@@ -278,20 +278,20 @@ export default function Footer() {
           willChange: 'transform',
         }}>
           {Array.from({ length: 8 }).map((_, i) => (
-            <span key={i} style={{ ...techMono, fontSize: '0.65rem', color: '#3f3f46', padding: '0 32px', letterSpacing: '0.08em', display: 'flex', alignItems: 'center', gap: 24, flexShrink: 0 }}>
+            <span key={i} style={{ ...techMono, fontSize: '0.65rem', color: '#8e8e93', padding: '0 32px', letterSpacing: '0.08em', display: 'flex', alignItems: 'center', gap: 24, flexShrink: 0 }}>
               <span style={{ display: 'inline-flex', alignItems: 'center', gap: 10 }}>
                 <span style={{ width: 16, height: 16, background: '#fdfbf7', clipPath: 'polygon(4px 0%,100% 0%,100% 100%,0% 100%,0% 4px)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
                   <span style={{ ...techMono, fontSize: '0.4rem', fontWeight: 900, color: '#110d0d' }}>AK</span>
                 </span>
                 AYUSH KISHAN
               </span>
-              <span style={{ color: '#27272a' }}>·</span>
+              <span style={{ color: '#71717a' }}>·</span>
               <span>Cyber Security</span>
-              <span style={{ color: '#27272a' }}>·</span>
+              <span style={{ color: '#71717a' }}>·</span>
               <span>SEC ENGINEERING</span>
-              <span style={{ color: '#27272a' }}>·</span>
+              <span style={{ color: '#71717a' }}>·</span>
               <span>CLOUD</span>
-              <span style={{ color: '#27272a' }}>·</span>
+              <span style={{ color: '#71717a' }}>·</span>
               <span>DEVSECOPS</span>
             </span>
           ))}

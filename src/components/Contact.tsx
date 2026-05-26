@@ -38,9 +38,9 @@ export default function Contact() {
             {/* Castle ASCII background */}
             <pre style={{
               position: 'absolute',
-              right: '-8%',
+              right: '-20%',
               bottom: '0',
-              left: '-2%',
+              left: '8%',
               fontFamily: 'monospace',
               fontSize: '0.62rem',
               lineHeight: '1.25',

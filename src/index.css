@@ -531,7 +531,7 @@ h1, h2, h3, h4, h5 {
   }
 }
 @media (max-width: 640px) {
-  .hero-headline { font-size: clamp(2.6rem, 14vw, 4rem); }
+  .hero-headline { font-size: clamp(1.8rem, 11vw, 4rem); word-wrap: break-word; hyphens: auto; }
 }
 /* ─── Mobile Visibility Fixes ────────────────────── */
 .footer-link {

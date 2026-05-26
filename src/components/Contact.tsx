@@ -34,12 +34,13 @@ export default function Contact() {
         <span className="section-label">Get in Touch</span>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 72, alignItems: 'start' }} className="contact-layout">
-          <div style={{ position: 'relative', overflow: 'hidden', padding: '16px' }}>
+          <div style={{ position: 'relative', padding: '16px' }}>
             {/* Castle ASCII background */}
             <pre style={{
               position: 'absolute',
-              right: '-10%',
-              bottom: '-5%',
+              right: '-8%',
+              bottom: '0',
+              left: '-2%',
               fontFamily: 'monospace',
               fontSize: '0.62rem',
               lineHeight: '1.25',

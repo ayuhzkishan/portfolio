@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ASCII_BAT = `
-       _==/          i     i            \==_
+      _==/           i     i            \==_
      /XX/            |\\___/|            \\XX\\
    /XXXX\\            |XXXXX|            /XXXX\\
   |XXXXXX\\_         _XXXXXXX_         _/XXXXXX|
@@ -10,15 +10,15 @@ const ASCII_BAT = `
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX|
  XXXXXX/^^^^"\\XXXXXXXXXXXXXXXXXXXXX/^^^^^\\XXXXXX
-  |XXX|       \\XXX/^^\\XXXXX/^^\\XXX/       |XXX|
-    \\X\\      \\X\\    \\X/    //X//        //X//
-       \\        \\X\\   /X\\   /X/         //
+  |XXX|       \\XXX/^^\\XXXXX/^^\\XXX/      |XXX|
+    \\X\\        \\X\\    \\X/    //X//      //X//
+       \\        \\X\\   /X\\   /X//        //
                  \\X\\ /XXX\\ /X/            
-                   \\X\\XXXXX/X/
-                    \\X\\XXX/X/
-                     \\X\\X/X/
-                      \\XXX/
-                       \\X/
+                  \\X\\XXXXX/X/
+                   \\X\\XXX/X/
+                    \\X\\X/X/
+                     \\XXX/
+                      \\X/
 `;
 
 const SOCIALS = [

@@ -43,7 +43,7 @@ export default function Contact() {
               fontFamily: 'monospace',
               fontSize: '0.62rem',
               lineHeight: '1.25',
-              color: 'rgba(253, 251, 247, 0.055)',
+              color: 'rgba(253, 251, 247, 0.1)',
               pointerEvents: 'none',
               userSelect: 'none',
               zIndex: 0,

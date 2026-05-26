@@ -86,7 +86,7 @@ export default function Contact() {
 
               {/* Social links */}
               <div style={{ marginTop: 12, display: 'flex', gap: 16 }}>
-                {[['[ GITHUB ]','https://github.com/ayuhzkishan'],['[ LINKEDIN ]','https://www.linkedin.com/in/ayush-kishan/'],['[ TWITTER ]','#']].map(([label, href]) => (
+                {[['[ GITHUB ]','https://github.com/ayuhzkishan'],['[ LINKEDIN ]','https://www.linkedin.com/in/ayush-kishan/'],['[ TWITTER ]','https://x.com/ayuhzkishan']].map(([label, href]) => (
                   <a key={label} href={href} target="_blank" rel="noreferrer"
                     className="footer-link"
                     style={{ ...mono, fontSize: '0.65rem', transition: 'color 0.15s', cursor: 'none' }}

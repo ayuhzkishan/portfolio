@@ -136,7 +136,7 @@ const NAV_COLS = [
     links: [
       { l: 'GitHub ↗',    h: 'https://github.com/ayuhzkishan', ext: true },
       { l: 'LinkedIn ↗',  h: 'https://www.linkedin.com/in/ayush-kishan/', ext: true },
-      { l: 'Twitter ↗',   h: '#', ext: true },
+      { l: 'Twitter ↗',   h: 'https://x.com/ayuhzkishan', ext: true },
     ],
   },
 ];

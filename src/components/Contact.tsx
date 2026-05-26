@@ -26,7 +26,6 @@ export default function Contact() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: 22 }}>
               {[
                 { label: 'EMAIL',    val: 'ayush.kishan29@gmail.com', href: 'mailto:ayush.kishan29@gmail.com' },
-                { label: 'PHONE',    val: '+91 78949-74368',          href: 'tel:+917894974368' },
                 { label: 'LOCATION', val: 'Sambalpur, Odisha, India', href: null },
               ].map(item => (
                 <div key={item.label}>

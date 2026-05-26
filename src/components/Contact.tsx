@@ -3,6 +3,26 @@ import React, { useState } from 'react';
 const mono: React.CSSProperties = { fontFamily: "'IBM Plex Mono', monospace" };
 const techMono: React.CSSProperties = { fontFamily: "'Space Mono', monospace" };
 
+const ASCII_CASTLE = `
+                    |>>>                        |>>>
+                    |                           |
+                _  _|_  _                   _  _|_  _
+               | |_| |_| |                 | |_| |_| |
+               \\\\  .      /                 \\\\ .    .  /
+                \\\\    ,  /                   \\\\    .  /
+                 | .   |_   _   _   _   _   _| ,   |
+                 |    .| |_| |_| |_| |_| |_| |  .  |
+                 | ,   | .    .     .      . |    .|
+                 |   . |  .     . .   .  ,   |.    |
+     ___----_____| .   |.   ,  _______   .   |   , |---~_____
+_---~            |     |  .   /+++++++\\\\    . | .   |         ~---_
+                 |.    | .    |+++++++| .    |   . |              ~-_
+              __ |   . |   ,  |+++++++|.  . _|__   |                 ~-_
+     ____--\\\`~    '--~~__ .    |++++ __|----~    ~\\\`---,              ___^~-__
+-~--~                   ~---__|,--~'                  ~~----_____-~'   \\\`~----~
+`;
+
+
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const handle = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
@@ -14,14 +34,31 @@ export default function Contact() {
         <span className="section-label">Get in Touch</span>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 72, alignItems: 'start' }} className="contact-layout">
-          {/* Left — copy + info */}
-          <div>
-            <h2 className="section-title" style={{ marginBottom: 20 }}>
-              Let's work<br />together.
-            </h2>
-            <p className="section-sub" style={{ marginBottom: 48 }}>
-              Open to internships, collaborations, and interesting engineering problems. Reach out — let's build something worthwhile.
-            </p>
+          <div style={{ position: 'relative', overflow: 'hidden', padding: '16px' }}>
+            {/* Castle ASCII background */}
+            <pre style={{
+              position: 'absolute',
+              right: '-10%',
+              bottom: '-5%',
+              fontFamily: 'monospace',
+              fontSize: '0.62rem',
+              lineHeight: '1.25',
+              color: 'rgba(253, 251, 247, 0.022)',
+              pointerEvents: 'none',
+              userSelect: 'none',
+              zIndex: 0,
+              whiteSpace: 'pre'
+            }}>
+              {ASCII_CASTLE}
+            </pre>
+
+            <div style={{ position: 'relative', zIndex: 1 }}>
+              <h2 className="section-title" style={{ marginBottom: 20 }}>
+                Let's work<br />together.
+              </h2>
+              <p className="section-sub" style={{ marginBottom: 48 }}>
+                Open to internships, collaborations, and interesting engineering problems. Reach out — let's build something worthwhile.
+              </p>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: 22 }}>
               {[
@@ -59,6 +96,7 @@ export default function Contact() {
                 ))}
               </div>
             </div>
+          </div>
           </div>
 
           {/* Right — form */}

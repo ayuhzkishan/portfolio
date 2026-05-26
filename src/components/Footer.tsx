@@ -135,7 +135,7 @@ const NAV_COLS = [
     heading: 'SOCIAL',
     links: [
       { l: 'GitHub ↗',    h: 'https://github.com/ayuhzkishan', ext: true },
-      { l: 'LinkedIn ↗',  h: '#', ext: true },
+      { l: 'LinkedIn ↗',  h: 'https://www.linkedin.com/in/ayush-kishan/', ext: true },
       { l: 'Twitter ↗',   h: '#', ext: true },
     ],
   },

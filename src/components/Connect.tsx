@@ -22,11 +22,11 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 `;
 
 const SOCIALS = [
-  { name: 'TryHackMe', id: '@ayuhzkishan', icon: 'THM' },
-  { name: 'LinkedIn', id: '/in/ayuhzkishan', icon: 'IN' },
-  { name: 'X / Twitter', id: '@ayuhzkishan', icon: 'X' },
-  { name: 'LeetCode', id: '/ayuhzkishan', icon: 'LC' },
-  { name: 'GitHub', id: '@ayuhzkishan', icon: 'GH' },
+  { name: 'TryHackMe', id: '@ayuhzkishan', icon: 'THM', href: '#' },
+  { name: 'LinkedIn', id: '/in/ayush-kishan', icon: 'IN', href: 'https://www.linkedin.com/in/ayush-kishan/' },
+  { name: 'X / Twitter', id: '@ayuhzkishan', icon: 'X', href: '#' },
+  { name: 'LeetCode', id: '/ayuhzkishan', icon: 'LC', href: '#' },
+  { name: 'GitHub', id: '@ayuhzkishan', icon: 'GH', href: 'https://github.com/ayuhzkishan' },
 ];
 
 const mono: React.CSSProperties = { fontFamily: 'JetBrains Mono, monospace' };
@@ -139,7 +139,8 @@ export default function Connect() {
 
                   {/* Logo Text Box */}
                   <a
-                    href="#"
+                    href={s.href}
+                    target="_blank" rel="noreferrer"
                     className="social-box"
                     style={{
                       display: 'flex', alignItems: 'center', justifyContent: 'center',

@@ -22,7 +22,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 `;
 
 const SOCIALS = [
-  { name: 'TryHackMe', id: '@ayuhzkishan', icon: 'THM', href: '#' },
+  { name: 'TryHackMe', id: '@ayuhzkishan', icon: 'THM', href: 'https://tryhackme.com/p/ayuhzkishan' },
   { name: 'LinkedIn', id: '/in/ayush-kishan', icon: 'IN', href: 'https://www.linkedin.com/in/ayush-kishan/' },
   { name: 'X / Twitter', id: '@ayuhzkishan', icon: 'X', href: 'https://x.com/ayuhzkishan' },
   { name: 'LeetCode', id: '/ayuhzkishan', icon: 'LC', href: '#' },

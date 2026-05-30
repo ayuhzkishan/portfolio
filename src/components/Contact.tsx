@@ -129,7 +129,7 @@ export default function Contact() {
                 <textarea
                   className="form-input"
                   id="message" name="message" rows={5}
-                  placeholder="Tell me about your project..."
+                  placeholder="your message...."
                   value={form.message}
                   onChange={handle}
                   style={{ cursor: 'none' }}

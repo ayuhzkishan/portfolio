@@ -102,7 +102,12 @@ export default function Contact() {
 
           {/* Right — form */}
           <div className="card" style={{ padding: '36px' }}>
-            <form onSubmit={e => e.preventDefault()} style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
+            <form onSubmit={e => {
+              e.preventDefault();
+              const subject = encodeURIComponent(`Message from ${form.name || 'Website Visitor'}`);
+              const body = encodeURIComponent(`${form.message}\n\n---\nName: ${form.name}\nEmail: ${form.email}`);
+              window.location.href = `mailto:ayush.kishan29@gmail.com?subject=${subject}&body=${body}`;
+            }} style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
               {[
                 { id: 'name',    label: 'Your Name',      type: 'text',  placeholder: 'Ayush Kishan' },
                 { id: 'email',   label: 'Email Address',  type: 'email', placeholder: 'you@example.com' },
